@@ -56,11 +56,12 @@ header .cointainer ul .header_li_cent .header_center .header_center_item:hover{
 }
 
 header .cointainer ul .header_li_right {
-  width: 80px;
-  height: 45px;
+  width: 60px;
+  height: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0;
 }
 header .cointainer ul .header_li_right .lang {
   width: 100%;
@@ -71,12 +72,15 @@ header .cointainer ul .header_li_right .lang {
   align-items: center;
   border-radius: 7px;
   color: white;
-  padding: 10px;
+  padding: 2px;
+  font-size: 20px;
   font-family: "blippo";
 }
 header .cointainer ul .header_li_right .lang .lang_p {
   font-family: "blippo";
-  font-size: 20px;
+  font-size: 30px;
+  width: 100px;
+  height: 20px;
 }
 header .cointainer ul .header_li_right .lang .lang_span {
   transform: rotate(90deg);
@@ -1818,6 +1822,15 @@ footer .icon_footer {
   display: flex;
   align-self: center;
 }
+main .sc1 .sc1_left {
+  padding-bottom: 0px;
+}
+main .sc1 .sc1_left .sc1_p {
+  font-size: 14px;
+}
+main .sc1 .sc1_left h1 {
+  font-size: 60px;
+}
 }
 
 @media screen and (max-width: 380px) {
@@ -1842,6 +1855,15 @@ footer .icon_footer {
 footer {
   height: 180px;
   padding: 10px;
+}
+main .sc1 .sc1_left {
+  padding-bottom: 0px;
+}
+main .sc1 .sc1_left .sc1_p {
+  font-size: 14px;
+}
+main .sc1 .sc1_left h1 {
+  font-size: 60px;
 }
 }
 
@@ -1922,6 +1944,15 @@ main .sc1 .sc1_left h1 {
 .new_pismo {
   width: 70%;
 }
+main .sc1 .sc1_left {
+  padding-bottom: 0px;
+}
+main .sc1 .sc1_left .sc1_p {
+  font-size: 14px;
+}
+main .sc1 .sc1_left h1 {
+  font-size: 60px;
+}
 }
 
 @media screen and (max-width: 350px) {
@@ -1941,6 +1972,15 @@ footer .icon_footer {
   margin-left: 90px;
   display: flex;
   align-self: center;
+}
+main .sc1 .sc1_left {
+  padding-bottom: 0px;
+}
+main .sc1 .sc1_left .sc1_p {
+  font-size: 14px;
+}
+main .sc1 .sc1_left h1 {
+  font-size: 50px;
 }
 }
 @media screen and (max-width: 320px) {
@@ -1973,13 +2013,18 @@ footer .icon_footer {
 .sc4 .sc4_bot .sc4_bot_cent {
   height: 50%;
 }
+main .sc1 .sc1_left h1 {
+  font-size: 44px;
+}
 }
 
 @media screen and (max-width: 300px) {
   main .sc1 .sc1_left {
     padding: 15px;
 }
-
+main .sc1 .sc1_left h1 {
+  font-size: 50px;
+}
 .sc2 .sc2_bot {
   padding: 10px;
 }
