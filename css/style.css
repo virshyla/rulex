@@ -1384,10 +1384,6 @@ form{
   .burger{
     display: flex;
   }
-  .burger img{
-    width: 100%;
-    height: 100%;
-  }
   header .cointainer ul .header_li_right {
     width: 100px;
     height: 35px;
@@ -1485,10 +1481,9 @@ main .sc1 .sc1_left {
   width: 40px;
   height: 80%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  border-top: 3px solid #DA2339;
-  border-bottom: 3px solid #DA2339;
+  flex-direction: column;
 }
 
 .burger_center{
@@ -1496,6 +1491,11 @@ main .sc1 .sc1_left {
   height: 3px;
   background-color: #DA2339;
 }
+
+.burger:hover .burger_center:nth-child(2){
+  width: 75%;
+}
+
 .sc3 .sc3_bot .sc3_bot_center {
   width: 90%;
   align-items: center;
