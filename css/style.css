@@ -21,6 +21,55 @@ header {
   align-items: center;
   border-bottom: 1px solid #000;
 }
+.burger_menu{
+  transition: all ease-in-out 300ms;
+  position: fixed;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  background-color: #DA2339;
+  display: flex;
+  justify-content: center;
+  align-items:  center;
+  z-index: 5;
+}
+.active{
+  transition: all ease-in-out 300ms;
+  position: fixed;
+  z-index: 5;
+  left: 0%;
+  width: 100%;
+  height: 100vh;
+  background-color: #DA2339;
+}
+.links{
+  height: 50vh
+}
+.links ul{
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.menu_link {
+  font-family: "blippo";
+  font-size: 30px;
+  color: aliceblue;
+}
+
+
+.top{
+  transform: translate(8px,10px);
+    rotate: 45deg;
+}
+.bot{
+  rotate: -45deg;
+    transform: translate(7px, -10px);
+}
+.mid{
+  opacity: 0;
+}
 header .cointainer {
   width: 100%;
   height: 100%;
@@ -686,6 +735,7 @@ footer .footer_right {
 
 .burger{
   display: none;
+  position: relative;
 }
 
 @media screen and (max-width: 1600px) {
@@ -1377,6 +1427,12 @@ form{
 }
 
 @media screen and (max-width: 768px) {
+  header{
+    background-color: white;
+    z-index: 9;
+    position: fixed;
+    width: 100%;
+  }
   header .cointainer ul .header_li_cent .header_center {
     display: none;
 }
